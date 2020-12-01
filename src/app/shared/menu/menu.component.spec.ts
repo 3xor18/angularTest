@@ -72,7 +72,7 @@ describe('MenuComponent', () => {
 
   it('elemento debe contener texto', () => {
     const element = fixture.debugElement.nativeElement;
-    expect(element.querySelector('#home').textContent).toEqual(' Home home');
+    expect(element.querySelector('#tituloHome').innerText).toEqual('Home');
   });
 
   it('#detail must exist', () => {
