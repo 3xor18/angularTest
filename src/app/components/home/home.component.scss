@@ -1,0 +1,28 @@
+.padre {
+  background-color: chocolate;
+  height: 100px;
+  width: 100%;
+}
+.hijo {
+  height: 80px;
+  width: 100px;
+}
+
+.hijo1 {
+  @extend .hijo;
+  background-color: yellow;
+}
+
+.hijo2 {
+  @extend .hijo;
+  background-color: blue;
+  p {
+    margin-top: 8px;
+    text-align: center;
+  }
+}
+
+.hijo3 {
+  @extend .hijo;
+  background-color: red;
+}

@@ -1,0 +1,33 @@
+<h1>Home</h1>
+<!-- FxLayout (row/column) alinea los hijos en eje x(row) en eje y (column), por defaul row -->
+<!-- fxLayoutGap define el espacio o seperacion entre los hijos -->
+<!-- fxLayoutAlign alinea alos hijos en el eje contraio del FxLayout, tiene 2 parametros-->
+<!-- ----------------primer parametro -->
+<!-- ----------------FxLayout:row => posicion en el eje x ||  FxLayoutcolumn => posicion en eje y -->
+<!-- ------------------------------start, center, end, space-between (espacio entre hijos sin margen), space-arround (spacio + bordes),space-evenly(bordes y espacion ==) -->
+<!-- ----------------segundo parametro -->
+<!-- ----------------FxLayout:row => posicion en el eje y ||  FxLayoutcolumn => posicion en eje x -->
+<!-- ------------------------------start, center, end, baseline (alinea en eje x de los textos), stretch (abarca todo el ancho del padre, viene por default) -->
+<div
+  class="padre"
+  fxLayout="row"
+  fxLayoutGap="10px"
+  fxLayoutAlign="center center"
+>
+  <!-- fxFlex le dice al hijo cuanto del padre ocupar -->
+  <div class="hijo1" fxFlex="80">
+    <p>Hijo 1</p>
+    <span>Amarillo</span>
+  </div>
+  <!-- fxFlexOrder le da la prioridad en que aparecera el elemento -1,0,1,2,3,4... -->
+  <div class="hijo2" fxFlexOrder="-1">
+    <p>Hijo 2</p>
+    <span>Azul</span>
+  </div>
+  <!-- fxFlexOffset, margen izq apatir del cual se renderizara el elemento -->
+  <!-- fxHide && fxShow esconden o muestran un elemento -->
+  <div class="hijo3" fxFlexOffset="10" fxHide.md="true">
+    <p>Hijo 3</p>
+    <span>Rojo</span>
+  </div>
+</div>

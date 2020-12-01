@@ -1,0 +1,21 @@
+<div fxLayout="row" fxLayoutAlign="end end" fxLayoutGap="15px" class="padre">
+  <div class="hijo" fxFlex="80%">
+    <img src="../../../assets/img/logo.svg" alt="" class="imagen" id="logo" />
+  </div>
+
+  <div class="hijo">
+    <button mat-raised-button color="warn" id="home" (click)="irHome()">
+      Home <mat-icon>home</mat-icon>
+    </button>
+  </div>
+  <div class="hijo">
+    <button mat-raised-button color="warn" id="listado" (click)="irListado()">
+      Listado <mat-icon>list</mat-icon>
+    </button>
+  </div>
+  <div class="hijo">
+    <button mat-raised-button color="warn" id="detail" (click)="irDetalle()">
+      Detalle <mat-icon>search</mat-icon>
+    </button>
+  </div>
+</div>
